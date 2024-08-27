@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="search-city-section">
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city ..."
+            name="citySearch"
+            id="citySearchField"
+          />
+          <input type="submit" value="Search" id="searchButton" />
+        </form>
+      </div>
+      <div class="current-weather-section">
+        <div class="current-temperature-icon"></div>
+        <div class="current-city">
+          <h3 class="time"></h3>
+          <h1></h1>
+          <span class="current-temperature"> </span>
+          <span class="celsius">°C</span>
+          <p>
+            <strong>Humidity: </strong> <span id="humidity"> </span>%
+            <br />
+            <strong>Wind: </strong> <span id="wind"> </span> km/h
+          </p>
+        </div>
+      </div>
+      <div class="forcast-weather-section">
+        <div class="daysForcast">
+          <div class="Day">TUE</div>
+          <img src="Images/moon and rain.svg" alt="" />
+          <div class="Temp">14°C</div>
+        </div>
+        <div class="daysForcast">
+          <div class="Day">WED</div>
+          <img src="Images/moon and rain.svg" alt="" />
+          <div class="Temp">14°C</div>
+        </div>
+        <div class="daysForcast">
+          <div class="Day">THU</div>
+          <img src="Images/moon and rain.svg" alt="" />
+          <div class="Temp">14°C</div>
+        </div>
+        <div class="daysForcast">
+          <div class="Day">FRI</div>
+          <img src="Images/moon and rain.svg" alt="" />
+          <div class="Temp">14°C</div>
+        </div>
+        <div class="daysForcast">
+          <div class="Day">SAT</div>
+          <img src="Images/moon and rain.svg" alt="" />
+          <div class="Temp">14°C</div>
+        </div>
+        <div class="daysForcast">
+          <div class="Day">SUN</div>
+          <img src="Images/moon and rain.svg" alt="" />
+          <div class="Temp">14°C</div>
+        </div>
+      </div>
+      <footer>
+        This project was coded by <em>Hadis</em> and is open-sourced on
+        <a href="#" target="_blank">GitHub</a>
+        and hosted on <a href="#" target="_blank"> Netlify</a>.
+      </footer>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+</html>
