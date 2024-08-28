@@ -120,7 +120,7 @@ img {
   margin-bottom: 24px;
 }
 
-.daysForcast {
+.forcastWeather {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -134,14 +134,17 @@ img {
   font-weight: 300;
   line-height: 32px;
 }
-.Day {
+.forcastDay {
   border-bottom: 1px solid #64648f;
 }
-.daysForcast img {
+.forcastIcon {
   display: block;
   margin: 0 auto;
   width: 70px;
   height: 70px;
+}
+.forcastTempMax {
+  font-weight: 600;
 }
 
 footer {
