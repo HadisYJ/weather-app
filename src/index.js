@@ -91,9 +91,11 @@ function getForecast(city) {
 
 function displayForecast(response) {
   let forecastHtml = "";
+  let today = new Date().getDay();
+  let startIndex = 1;
 
   response.data.daily.forEach(function (day, index) {
-    if (index < 6) {
+    if (index >= startIndex && index < startIndex + 6) {
       let weatherCondition = day.condition.icon;
       let iconPath = iconMapping[weatherCondition];
       forecastHtml += `
